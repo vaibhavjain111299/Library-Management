@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Library App</title>
+</head>
+
+<body>
+    <header>
+        <h1>Library Application</h1>
+    </header>
+
+    <button onclick="newform()" id="new-book">+</button>
+
+    <div id="book-shelf"></div>
+
+    <section id="pop-up">
+        <div id="container">
+            <h1>New Book</h1>
+            <button onclick="removeForm()" id="close">X</button>
+            <form id="form">
+                <label for="title">Title of Book:</label>
+                <input type="text" id="title" placeholder="Book Title" required><br>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" placeholder="Author of Book" required><br>
+
+                <label for="pages">Number of Pages:</label>
+                <input type="number" id="pages" placeholder="Pages" required><br>
+
+                <label for="read">Have you Read?</label>
+                <input type="text" id="read" placeholder="Have you Read?"><br>
+
+                <input type="submit" id="submit" value="submit">
+            </form>
+        </div>
+    </section>
+
+</body>
+
+<script src="library.js"></script>
+
+</html>
